@@ -1,0 +1,186 @@
+body{
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* Cabeçalho */
+header {
+    height: 56px; 
+    background-color: #eee;
+    color: #393E46;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.headerLogo {
+    height: 40px;
+    margin: 8px 0 0 22px;
+}
+
+.headerDiv {
+    display: flex;
+}
+
+.daps {
+    margin: 12px 0 0 12px;
+    font-size: 16pt;
+    font-weight: 700;
+}
+
+.userIcon {
+    float: right;
+    font-size: 24pt;
+    padding: 4px 16px 0 0;
+}
+
+div.col.headerDiv a {
+    text-decoration: none;
+    color: #393E46;
+}
+
+
+/* Menu lateral */
+.sidebar {
+    position: fixed;
+    top: 56px;
+    left: 0;
+    /* height: calc(100% - 56px); */
+    height: 100%;
+    width: 104px;
+    background-color: #142850;
+}
+
+.nav_list {
+    padding: 16px;
+}
+
+ul {
+    padding: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.sidebar li:hover {
+    background-color: #27496D;
+    margin-left: -16px;
+    margin-right: -16px;
+}
+
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.sidebarLogo {
+    color: #FFD369;
+    font-size: 32pt;
+}
+
+
+/* Submenu lateral (oculto) */
+.subsidebar {
+    position: fixed;
+    top: 56px;
+    left: 104px;
+    /* height: calc(100% - 56px); */
+    height: 100%;
+    width: 160px;
+    display: none;
+    background-color: #27496D;
+}
+
+.nav_list_sub {
+    padding-top: 16px;
+}
+
+#liDiretoria:hover .subsidebar {
+    display: block;
+}
+
+#liDivubs:hover .subsidebar {
+    display: block;
+}
+
+#liDivtec:hover .subsidebar {
+    display: block;
+}
+
+#liRegulacao:hover .subsidebar {
+    display: block;
+}
+
+.subsidebar li {
+    padding: 8px 0 8px 0;
+    margin-left: 16px;
+    width: 160px;
+    text-align: left;
+}
+
+.subsidebar li:hover {
+    background-color: #0C7B93;
+    margin-left: 0;
+    padding: 8px 0 8px 16px;
+}
+
+.subsidebar span {
+    margin-left: 8px;
+}
+
+
+/* Main */
+main {
+    position: fixed;
+    top: 56px;
+    left: 104px;
+    /* height: calc(100% - 56px); */
+    height: 100%;
+    width: calc(100% - 104px);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    border-top:  1px solid #393e4626;
+}
+
+main div.row h1 {
+    margin: 32px 0 32px 0;
+    font-weight: 600;
+    font-size: 32pt;
+}
+
+.cardsRow {
+    padding: 32px;
+    justify-content: center;
+}
+
+div.cardsRow div.card {
+    margin: 0 16px 0 16px;
+}
+
+div.card-header {
+    font-weight: 600;
+}
+
+li a i.fas {
+    color: #E94560;
+    font-size: 12pt;
+}
+
+.buttonsRow {
+    justify-content: space-evenly;
+    margin-top: 16px;
+}
+
+#frameLoad {
+    margin-top: 32px;
+    width: 85%;
+    height: 60%;
+}
+
+#adnHidden button{
+    margin: 8px;
+}
