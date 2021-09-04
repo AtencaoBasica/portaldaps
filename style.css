@@ -144,6 +144,7 @@ main {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     border-top:  1px solid #393e4626;
+    overflow: auto;
 }
 
 main div.row h1 {
@@ -178,7 +179,9 @@ li a i.fas {
 #frameLoad {
     margin-top: 32px;
     width: 85%;
-    height: 60%;
+    height: 100%;
+    /* max-height: calc(100% - 272px); */
+    margin-bottom: 5%;
 }
 
 #adnHidden button{
